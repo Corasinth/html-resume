@@ -46,4 +46,12 @@ var questions = [
 
 async function promptUser() {
   var response = await inquirer.prompt(questions);
+  var htmlStr = generateHTML(response);
+  fs.writeFile("index.html", htmlStr, (err) => {
+    err ? console.error(err) : console.log("Successfully saved!");;
+  })
+}
+
+function generateHTML(data){
+  return;
 }
