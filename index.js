@@ -44,7 +44,7 @@ var questions = [
   },
   {
     type: "input",
-    message: "What's skills did you gain? (seperate by comma)",
+    message: "What's did you learn and do? (seperate by comma)",
     name: "skillsGained"
   },
 ];
