@@ -59,7 +59,7 @@ var questions = [
 
 function generateHTML(data){
   var skillsGainedArray = data.skillsGained.split(",")
-  var skillsGainedString
+  var skillsGainedString = ""
   for (let i = 0; i<skillsGainedArray.length; i++) {
     skillsGainedString += `<li>${skillsGainedArray[i]}</li>`
   }
@@ -79,7 +79,7 @@ function generateHTML(data){
     <p>${data.bio}</p>
     <h1 id="Contact">Contact</h1>
     <p>${data.linkedin} | ${data.github} | ${data.email}</p>
-    <h1 id="skills"></h1>
+    <h1 id="skills">Skills</h1>
     <p>${data.skills}</p>
     <h1 id="work-experiance"></h1>
     <h2>${data.experience}</h2>
